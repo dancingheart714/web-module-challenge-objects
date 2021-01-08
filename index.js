@@ -18,7 +18,7 @@ The function should:
 function createMenuItem(name, price, category){
    return {name, price, category};
 }
-console.log(createMenuItem("Taco", 3, "Lunch"));
+console.log(createMenuItem("Taco", 8, "Lunch"));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -55,9 +55,9 @@ export const burger = {
 }
 burger.discount = function(role){
   if (role === "teacher" || role === "student"){
-    return .25 * 18;
+    return .75 * 18;
   } else {
-    return .10 * 18;
+    return .90 * 18;
   }
 }
 console.log(burger.discount("teacher"));
@@ -90,7 +90,7 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
- console.log(reviews.push {"name": "Larry", "rating": 2, "feedback": "I hated the karaoke! I want to eat in peace"});
+ reviews.push({"name": "Larry", "rating": 2, "feedback": "I hated the karaoke! I want to eat in peace"});
 
 
 
@@ -138,13 +138,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(reviews, index) {
-  return `${reviews[index.length -1].name} gave the restaurant a 
-  ${reviews[index.length -1].rating} star review, andd their feedback was:
-  ${reviews[index.length -1].feedback}`;
-} 
+function getLastReview(reviews) {
+    return `${reviews[reviews.length - 1].name} gave the restaurant a ${reviews[reviews.length - 1].rating} star review and their feedback was: ${reviews[reviews.length - 1].feedback}`;
+  } 
+  console.log(getLastReview(reviews));
+ 
 
-console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
