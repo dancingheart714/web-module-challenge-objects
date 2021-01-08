@@ -139,7 +139,7 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(reviews) {
-    return `${reviews[reviews.length - 1].name} gave the restaurant a ${reviews[reviews.length - 1].rating} star review and their feedback was: ${reviews[reviews.length - 1].feedback}`;
+    return `${reviews[7].name} gave the restaurant a ${reviews[7].rating} star review, and their feedback was: ${reviews[7].feedback}`;
   } 
   console.log(getLastReview(reviews));
  
